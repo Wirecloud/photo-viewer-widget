@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
+    <Catalog.ResourceDescription>
+        <Vendor>CoNWeT</Vendor>
+        <Name>Photo Viewer</Name>
+        <DisplayName>Photo Viewer</DisplayName>
+        <Version>1.5.0</Version>
+        <Author>sblanco, jserrano</Author>
+        <Mail>sblanco@conwet.com, jserrano@conwet.com</Mail>
+        <Description>This widget shows photos from different sources.</Description>
+        <ImageURI>images/catalogue.png</ImageURI>
+        <iPhoneImageURI>images/catalogueSmartphone.png</iPhoneImageURI>
+        <WikiURI>http://conwet.fi.upm.es/docs/display/wirecloud/Photo+Viewer</WikiURI>
+    </Catalog.ResourceDescription>
+    <Platform.Preferences>
+    </Platform.Preferences>
+    <Platform.StateProperties>
+    </Platform.StateProperties>
+    <Platform.Wiring>
+        <InputEndpoint name="urlSlot" type="text" label="Photo URL" description="The URL of a photo" friendcode="url" />
+    </Platform.Wiring>
+
+    <Platform.Link>
+        <XHTML href="index.html" use-platform-style="true"/>
+    </Platform.Link>
+    <Platform.Rendering width="6" height="28"/>
+</Template>
