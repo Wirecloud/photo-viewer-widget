@@ -59,6 +59,7 @@
         this.widgetWidth = 0;
 
         this.image = {};
+        this.defaultImage = "images/defaultPhoto.png";
 
         MashupPlatform.widget.context.registerCallback(function (new_values) {
                 if (this.image && 'heightInPixels' in new_values) {
@@ -72,6 +73,8 @@
         document.getElementById("zoomIn").addEventListener("click", this.expandZoom.bind(this), false);
         document.getElementById("zoomOut").addEventListener("click", this.reduceZoom.bind(this), false);
         document.getElementById("originalSize").addEventListener("click", this.originalSizeZoom.bind(this), false);
+
+        this.setNewImage.call(this, this.defaultImage);
     };
 
     PhotoViewer.prototype.setNewImage = function setNewImage(value) {
@@ -99,14 +102,14 @@
 
             lowestProportion = this.lowestProportion.call(this);
 
-            this.image.style.width = Math.floor(this.originalSizeX * lowestProportion);
-            this.image.style.height = Math.floor(this.originalSizeY * lowestProportion);
+            this.image.style.width = Math.floor(this.originalSizeX * lowestProportion) + 'px';
+            this.image.style.height = Math.floor(this.originalSizeY * lowestProportion) + 'px';
             this.actualZoom = this.DEFAULT_ZOOM * lowestProportion;
 
             break;
         case 1: // Display image in original size //
-            this.image.style.width = this.originalSizeX;
-            this.image.style.height = this.originalSizeY;
+            this.image.style.width = this.originalSizeX + 'px';
+            this.image.style.height = this.originalSizeY + 'px';
             this.actualZoom = this.DEFAULT_ZOOM;
             break;
         default: // Zoom in or zoom out //
