@@ -1,27 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Template xmlns="http://wirecloud.conwet.fi.upm.es/ns/template#">
-    <Catalog.ResourceDescription>
-        <Vendor>CoNWeT</Vendor>
-        <Name>photo-viewer</Name>
-        <DisplayName>Photo Viewer</DisplayName>
-        <Version>1.5.2</Version>
-        <Author>sblanco, jserrano</Author>
-        <Mail>sblanco@conwet.com, jserrano@conwet.com</Mail>
-        <Description>This widget shows photos from different sources.</Description>
-        <ImageURI>images/catalogue.png</ImageURI>
-        <iPhoneImageURI>images/catalogueSmartphone.png</iPhoneImageURI>
-        <WikiURI>http://conwet.fi.upm.es/docs/display/wirecloud/Photo+Viewer</WikiURI>
-    </Catalog.ResourceDescription>
-    <Platform.Preferences>
-    </Platform.Preferences>
-    <Platform.StateProperties>
-    </Platform.StateProperties>
-    <Platform.Wiring>
-        <InputEndpoint name="urlSlot" type="text" label="Photo URL" description="The URL of a photo" friendcode="url" />
-    </Platform.Wiring>
-
-    <Platform.Link>
-        <XHTML href="index.html" use-platform-style="true"/>
-    </Platform.Link>
-    <Platform.Rendering width="6" height="28"/>
-</Template>
+<?xml version='1.0' encoding='UTF-8'?>
+<widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="photo-viewer" version="1.5.2">
+  <details>
+    <title>Photo Viewer</title>
+    <email>sblanco@conwet.com, jserrano@conwet.com</email>
+    <image>images/catalogue.png</image>
+    <smartphoneimage>images/catalogueSmartphone.png</smartphoneimage>
+    <description>This widget shows photos from different sources.</description>
+    <doc>http://conwet.fi.upm.es/docs/display/wirecloud/Photo+Viewer</doc>
+    <authors>sblanco, jserrano</authors>
+  </details>
+  <wiring>
+    <inputendpoint name="urlSlot" type="text" label="Photo URL" description="The URL of a photo" friendcode="url"/>
+  </wiring>
+  <contents src="index.html" useplatformstyle="true"/>
+  <rendering height="28" width="6"/>
+</widget>
