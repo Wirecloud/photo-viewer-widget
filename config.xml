@@ -2,12 +2,12 @@
 <widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="photo-viewer" version="1.6">
   <details>
     <title>Photo Viewer</title>
-    <email>sblanco@conwet.com, jserrano@conwet.com</email>
+    <email>wirecloud@conwet.com</email>
     <image>images/catalogue.png</image>
     <smartphoneimage>images/catalogueSmartphone.png</smartphoneimage>
     <description>This widget shows photos from different sources.</description>
-    <doc>http://conwet.fi.upm.es/docs/display/wirecloud/Photo+Viewer</doc>
-    <authors>sblanco, jserrano</authors>
+    <doc>doc/index.md</doc>
+    <authors>Santiago Blanco &lt;sblanco@conwet.com&gt;, Javier Serrano &gt;jserrano@conwet.com&lt;</authors>
   </details>
   <wiring>
     <inputendpoint name="urlSlot" type="text" label="Photo URL" description="The URL of a photo" friendcode="url"/>
