@@ -35,8 +35,8 @@
  *
  */
 
-/*jshint browser:true white:true*/
-/*global MashupPlatform */
+/* jshint browser:true white:true*/
+/* global MashupPlatform */
 
 (function () {
 
@@ -62,10 +62,10 @@
         this.defaultImage = "images/defaultPhoto.png";
 
         MashupPlatform.widget.context.registerCallback(function (new_values) {
-                if (this.image && 'heightInPixels' in new_values) {
-                    this.defaultZoom.call(this);
-                }
-            }.bind(this));
+            if (this.image && 'heightInPixels' in new_values) {
+                this.defaultZoom.call(this);
+            }
+        }.bind(this));
     };
 
     PhotoViewer.prototype.init = function init() {
@@ -158,9 +158,9 @@
         this.setSize.call(this, 1);
     };
 
-/****************************************************************************************/
-/************************************ private *******************************************/
-/****************************************************************************************/
+/** **************************************************************************************/
+/** ********************************** private *******************************************/
+/** **************************************************************************************/
 
     var imgLoaded = function imgLoaded() {
         this.originalSizeX = this.image.width;
@@ -182,6 +182,7 @@
 
 })();
 
+// eslint-disable-next-line
 var photoViewer = new PhotoViewer();
 
 document.addEventListener("DOMContentLoaded", photoViewer.init.bind(photoViewer), false);

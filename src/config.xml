@@ -6,7 +6,7 @@
     <image>images/catalogue.png</image>
     <smartphoneimage>images/catalogueSmartphone.png</smartphoneimage>
     <description>This widget shows photos from different sources.</description>
-    <doc>doc/index.md</doc>
+    <doc>doc/userguide.md</doc>
     <authors>Santiago Blanco &lt;sblanco@conwet.com&gt;, Javier Serrano &gt;jserrano@conwet.com&lt;</authors>
   </details>
   <wiring>
